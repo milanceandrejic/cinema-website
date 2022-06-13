@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/logo_veliki.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <title>Početna strana - PopCinema</title>
+</head>
+<body>
+
+        <div class="navigacija">
+            <div class="logotip">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <a class="normal" id="nav-menu-button" href="javascript:(0);" onclick="MenuFunction()"><i class="fa fa-bars"></i></a>
+            <ul class="navbar" id="navBar">
+                <li><a href="index.html" class="active">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="projekcije.html">Projekcije</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="rezervacija.html">Rezervacija</a></li>
+            </ul>
+        </div>
+
+    <!-- Ovde se zavrsava navigacija -->
+
+    <section class="row">
+        <div class="intro-img">
+            <div class="intro-text">
+                <div>
+                    <h1>BIOSKOP POP-CINEMA</h1>
+                    <hr>
+                    <p>Vaš omiljeni bioskop, u srcu Voždovca! Mi nismo samo običan bioskop, mi spajamo ljude!</p>
+                    <a href="onama.html">Saznaj više >></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container row">
+        <h2 class="text-center">Popularno ovog meseca</h2>
+        <hr>
+
+        <div class="col-4">
+            <div class="card">
+                <img src="img/film1.jpg" alt="zlatnidecko">
+                <div class="container">
+                    <h4>Zlatni dečko</h4>
+                    <hr>
+                    <p>Denis Marković je talentovani fudbaler koji veoma mlad dospeva u sam vrh svetskog fudbala, ali zbog problema sa karakterom ne uspeva da opstane na tom nivou.</p>
+                    <a href="rezervacija.html" onclick="SendMovie('Zlatni dečko')" >Rezerviši kartu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <img src="img/film2.jpeg" alt="spajdermen">
+                <div class="container">
+                    <h4>Spajdermen - Put bez povratka</h4>
+                    <hr>
+                    <p> Put bez povratka je nastavak priče koja je započeta hit-filmom Povratak kući iz 2017. godine, a nastavljena 2019. godine u filmu Daleko od kuće.</p>
+                    <a href="rezervacija.html" onclick="SendMovie('Spajdermen - Put bez povratka')">Rezerviši kartu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <img src="img/film3.jpg" alt="betmen">
+                <div class="container">
+                    <h4>Betmen</h4>
+                    <hr>
+                    <p>U svojoj drugoj godini borbe protiv kriminala, Betmen otkriva korupciju u Gotam Sitiju koja se povezuje sa njegovom porodicom dok se suočava sa serijskim ubicom Riddlerom.</p>
+                    <a href="rezervacija.html" onclick="SendMovie('Betmen')">Rezerviši kartu</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container row">
+        <h2 class="text-center">Naša preporuka</h2>
+        <hr>
+
+
+        <div class="col-4">
+            <div class="card">
+                <img src="img/film4.jpg" alt="kliford">
+                <div class="container">
+                    <h4>Kliford - Veliki crveni pas</h4>
+                    <hr>
+                    <p>Kada mlada Emili sretne magičnog spasioca životinja koji joj poklanja malu crvenu kucu, ona nije očekivala da će se probuditi i pronaći ogromnog psa u svom malom stanu.</p>
+                    <a href="rezervacija.html" onclick="SendMovie('Kliford - Veliki crveni pas')">Rezerviši kartu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <img src="img/film5.jpg" alt="toma">
+                <div class="container">
+                    <h4>Toma</h4>
+                    <hr>
+                    <p>Biografija o Tomi Zdravkoviću, čoveku koji je upamćen ne samo po svojim pesmama i jedinstvenom načinu na koji ih je pevao, već i kao boem, i po ponašanju i po duši.</p>
+                    <a href="rezervacija.html"  onclick="SendMovie('Toma')">Rezerviši kartu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card">
+                <img src="img/film9.jpg" alt="">
+                <div class="container">
+                    <h4>Iskupljenje ljubavi</h4>
+                    <hr>
+                    <p>Prodata u prostituciju kao dete, Angela ne zna ništa osim izdaje. Može li se njeno srce ikada popraviti? Zasnovan na romanu Frensin Rivers.</p>
+                    <a href="rezervacija.html" onclick="SendMovie('Iskupljenje ljubavi')">Rezerviši kartu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Ovde pocinje foter -->
+    <footer>
+        <div class="container text-center">
+
+            <a href="https://www.google.com/maps/place/Краља+Владимира+1,+Београд/" target="_blank" class="col-4">
+               <i class="fa fa-map-marker-alt"></i> Kralja Vladimira 1 - Beograd</a>
+            <a href="mailto:office@popcinema.rs" class="col-4">
+                <i class="fa fa-envelope"></i> office@popcinema.rs</a>
+            <a href="tel:+38111012345" class="col-4">
+                <i class="fa fa-phone"></i> +381 11/012-345</a>
+
+            <p>
+                <br>
+                <br>
+                <br>
+                &copy; POP - CINEMA 2022 <br> <br>Kreirao: Milanče Andrejić NRT-8/20
+            </p>
+        </div>
+    </footer>
+
+    <!-- Sekcija za skripte -->
+    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

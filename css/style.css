@@ -1,0 +1,567 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #EEEBDD;
+}
+*{
+    box-sizing: border-box;
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+[class*='col-']{
+    display: inline;
+    float: left;
+    padding: 0.5em;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* NASLOV POCETNE */
+
+.intro-img{
+    background-image: url("../img/cinema-intro.jpg") ;
+    background-size: cover;
+    background-position: center;
+    height: 40em;
+    position: relative;
+}
+.intro-text{
+    position: relative;
+    background: rgba(0,0,0,70%);
+    height: 40em;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    color: #EEEBDD;
+}
+.intro-text div{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    vertical-align: middle;
+    horiz-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.intro-text div h1{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.intro-text div a{
+    display: block;
+    text-decoration: none;
+    color: #EEEBDD;
+    background-color:#810000 ;
+    padding: 0.8em;
+    margin-top:1em ;
+    border: 1px #610000 solid;
+    border-radius: 5px ;
+    font-size: 1.2em;
+}
+.intro-text div a:hover{
+    opacity: 0.8;
+    transition: opacity 0.15s ease-in;
+}
+@keyframes Pojava {
+    0%{transform: scale(0)}
+    100%{transform: scale(1)}
+}
+.intro-text div{
+    animation: Pojava 1.5s ease;
+}
+
+section h2{
+    color: #1B1717;
+    font: 2.4em Arial;
+}
+
+/* CARD */
+
+.card{
+    border-radius: 25px;
+    box-shadow: 0 0 10px #333;
+    text-align: center;
+    background-color: #810000;
+    color: #EEEBDD;
+    padding: 0.2em;
+}
+.card h4{
+    font-size: 1.3em;
+}
+.card img{
+    width:100%;
+    height:fit-content;
+    border-radius: 20px 20px 0 0;
+}
+.card a{
+    text-decoration: none;
+    color: #EEEBDD;
+    background-color:#1B1717 ;
+    padding: 0.8em;
+    border-radius: 5px ;
+    font-size: 0.9em;
+}
+.card a:hover{
+    background-color: #252020;
+    transition: background-color 0.15s ease-in;
+}
+
+body{
+    margin: 0;
+}
+
+/* NAVIGACIJA HEADER */
+
+
+.logotip{
+    float: left;
+}
+
+.logotip:hover{
+    filter: brightness(85%);
+    transition: all ease-in .25s ;
+}
+
+#nav-menu-button{
+    display: none;
+}
+
+.navigacija{
+    text-align: center;
+    width: 100%;
+    min-height: 80px;
+    padding: 0.6em;
+    margin: 0;
+    background-color: #1B1717;
+}
+
+.navbar{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top:1.2em ;
+    margin-left: 6em;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+.navbar a{
+    display: block;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    color: #EEEBDD;
+    padding: 0 1em;
+
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 0;
+    left: 50%;
+    bottom: -5px;
+    border-bottom: 3px #EEEBDD solid;
+    transition: all 0.25s ease-in-out;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.active{
+ color: #a30101 !important; 
+ font-weight: bold;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    padding: 0.6em;
+    margin: 0;
+    background-color: #1B1717;
+    color: #EEEBDD;
+}
+footer a{
+    text-decoration: none;
+    color: #EEEBDD;
+    font-size: 1.2em;
+}
+footer a:hover{
+    color: #a30101;
+    transition: color 0.15s ease-in;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    margin: 1em auto;
+}
+
+/* O NAMA */
+.onama img{
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    animation: pojava2 2s ease;
+}
+
+.onama .mreze{
+    position: relative;
+    animation: pojava1 1s ease;
+    margin:3em 0;
+    display: inline-block;
+}
+.onama .mreze a{
+    text-decoration: none;
+    color: #252020;
+    font-size: large;
+    vertical-align: middle;
+}
+.onama .mreze a:hover{
+    color: #810000;
+    transition: color 250ms ease-in;
+}
+
+.onama-tekst{
+    position: relative;
+    animation: pojava1 1s ease;
+}
+
+@keyframes pojava1 {
+    0%{opacity: 0%;left: -50px;}
+    100%{opacity: 100%;left: 0px;}
+}
+@keyframes pojava2 {
+    0%{opacity: 0%; right: -50px;}
+    100%{opacity: 100%;right: 0px;}
+}
+
+/* KONTAKT */
+
+.kontakt form div{
+    margin-bottom: 1em;
+    display: block;
+}
+.kontakt form div label{
+    font-size: 1.2em;
+    color: #333;
+    display: block;
+    text-align: left;
+    margin-left: 5px;
+}
+.kontakt form input{
+    display: block;
+    width:100%;
+    font-size: 1em;
+    padding: .8em;
+    border-radius: 5px;
+    border: 1px #888 solid;
+}
+.kontakt form textarea{
+    display: inline;
+    max-width: 100%;
+    font-family: Arial;
+    min-width: 100%;
+    min-height: 6em;
+    padding: .8em;
+    font-size: 1em;
+    border: 1px #888 solid;
+    border-radius: 5px;
+}
+.kontakt form .text-ar label{
+    vertical-align: top;
+}
+.kontakt button{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    padding: 1em;
+    margin-top: 1em;
+    color: #888;
+    background-color: #EEEBDD;
+    border: 1px #888 solid;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.kontakt button:hover{
+    background-color: #333333 ;
+    color: #EEEBDD;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+.form-text{
+    font-size: 1.4em;
+    font-weight: lighter;
+    font-style: italic;
+    color: #333333;
+}
+.kontakt iframe{
+    display: block;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* PROJEKCIJE - nema nicega, sve su kartice*/
+
+/* REZERVACIJA */
+.reserve form div{
+    margin-top: 1em;
+}
+.reserve form div label{
+    font-size: 1.2em;
+    color: #333;
+    display: inline-block;
+    text-align: left;
+    margin-left: 5px;
+}
+.reserve form div input{
+    display: block;
+    width:100%;
+    font-size: 1em;
+    padding: .8em;
+    border-radius: 5px;
+    border: 1px #888 solid;
+}
+.reserve form div select
+{
+    display: block;
+    width:100%;
+    font-size: 1em;
+    padding: .8em;
+    border-radius: 5px;
+    border: 1px #888 solid;
+}
+.reserve form div button{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    padding: 1em;
+    margin-top: 1em;
+    color: #333;
+    background-color: #EEEBDD;
+    border: 1px #888 solid;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.reserve button:hover{
+    background-color: #333333 ;
+    color: #EEEBDD;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+.reserve form div a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    padding: 1em;
+    margin-top: 1em;
+    color: #333;
+    background-color: #EEEBDD;
+    border: 1px #888 solid;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.reserve a:hover{
+    background-color: #333333 ;
+    color: #EEEBDD;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+.reserve form div .rad{
+    display: inline-block;
+    text-align: left;
+    width: fit-content;
+}
+
+.validacija:invalid {
+    border: 1px #f66 solid;
+    background-color: #ffdddd;
+}
+
+/* GALERIJA */
+.galery img{
+    width: 90%;
+    text-align: center;
+    transition: 500ms ease;
+}
+.galery .row [class*='col-']{
+    text-align: center;
+}
+
+.galery img:hover{
+    transform: scale(1.5);
+    transition: 500ms ease;
+}
+.galery .row{
+    margin-top: 2.3em;
+    margin-bottom: 2.2em;
+}
+
+/* TABELA */
+
+.table-reserved{
+    width: 100%;
+}
+.table-reserved tr{
+    border-bottom: 2px #888888 solid;
+}
+.table-reserved tr th,td{
+    border: none;
+    margin: 0;
+    padding: 0.4em;
+    vertical-align: middle;
+    text-align: center;
+}
+.table-reserved button{
+    color: #a30101;
+    background-color: #888888;
+    padding: 0.2em;
+    border: 1px #25202077 solid;
+    border-radius: 2px;
+    width: 100%;
+}
+.table-reserved button:hover{
+    color: #EEEBDD;
+    background-color: #333333;
+    transition: all .15s ease-in;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 860px){
+    table,table tbody, table td, table tr,table th { display: inline-block; text-align: center; width: 100%}
+    table th, table td { margin: 0; padding-left: 25px;  }
+    table td  { margin: auto; list-style: none ; display: list-item; padding-left: 0; }
+    table tbody thead { display: none; }
+    .table-reserved button{
+        width: 150px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    [class*='col-']{
+        width: 100%;
+        display: inline-block;
+    }
+    .galery img:hover{
+        transform: scale(1.1);
+        transition: 500ms ease;
+    }
+    .galery img{
+        width: 100%;
+    }
+    .galery .row{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .onama{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+
+    .intro-text div{
+        width: 80%;
+    }
+
+    .navbar a{
+        display: none;
+    }
+    #nav-menu-button{
+        float: right;
+        display: block;
+        color: #EEEBDD;
+        font-size: 36px;
+        text-align: center;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .navigacija{
+        transition: all 500ms ease;
+    }
+
+    .responsive li a{
+        display: inherit;
+        position: relative;
+        margin-right: 0;
+    }
+    .responsive li{
+        display: block;
+        margin-left: auto ;
+        width: fit-content;
+        text-align: right;
+        padding: 0.4em;
+    }
+    .responsive{
+        position: relative;
+        display: block;
+        transition: all 500ms ease;
+        margin: 0;
+        width: 100%;
+        right: 0;
+        float: none;
+        height: 12em;
+        text-align: end;
+    }
+
+
+}
+
+@media only screen and (max-width: 1100px){
+    footer{
+        font-size: small;
+    }
+    footer p{
+        padding-top: 3em;
+    }
+}
+.rotated {
+    color: #810000 !important;
+    transition: all 350ms ease;
+    transform: rotate(90deg);
+
+}
+.normal {
+    color: #EEEBDD;
+    transition: all 350ms ease;
+}
+
+/* RESPONSIVE */

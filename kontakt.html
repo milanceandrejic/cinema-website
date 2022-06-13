@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/logo_veliki.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <title>Kontakt - PopCinema</title>
+</head>
+<body>
+
+    <div class="navigacija">
+        <div class="logotip">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        </div>
+        <a class="normal" id="nav-menu-button" href="javascript:(0);" onclick="MenuFunction()"><i class="fa fa-bars"></i></a>
+        <ul class="navbar" id="navBar">
+            <li><a href="index.html" >Početna</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            <li><a href="projekcije.html">Projekcije</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="rezervacija.html">Rezervacija</a></li>
+        </ul>
+    </div>
+
+<!-- Ovde se zavrsava navigacija -->
+
+<section class="container row kontakt">
+    <h2 class="text-center">Kontakt</h2>
+    <hr>
+    <p class="col-12 form-text text-center">Ukoliko imate nekih pitanja slobodno nas kontaktirajte.</p>
+    <div class="col-6">
+        <form action="" method="get">
+            <div>
+                <label for="ime"> <i class="fa fa-user"></i></label>
+                <input id="ime" type="text" placeholder="Ime i Prezime" required>
+            </div>
+
+            <div>
+                <label for="mail"><i class="fa fa-envelope"></i></label>
+                <input id="mail" type="email" placeholder="E-Adresa" required>
+            </div>
+
+            <div>
+                <label for="phone"><i class="fa fa-phone"></i></label>
+                <input id="phone" type="tel" placeholder="Broj Telefona" required>
+            </div>
+            <div class="text-ar">
+                <label for="message"><i class="fa fa-edit"></i></label>
+                <textarea id="message" placeholder="Poruka" required></textarea>
+            </div>
+            <button id="conact-button" type="submit" onclick="MessageSent()"><i class="fa fa-paper-plane"></i> Pošalji</button>
+        </form>
+    </div>
+    <div class="col-6">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.941327509767!2d20.470322915534727!3d44.782001479098746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7042b9c6ae37%3A0x9392be9f96985b75!2z0JrRgNCw0ZnQsCDQktC70LDQtNC40LzQuNGA0LAsINCR0LXQvtCz0YDQsNC0!5e0!3m2!1ssr!2srs!4v1643467250408!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+
+</section>
+
+
+<!-- Ovde pocinje foter -->
+<footer>
+    <div class="container text-center">
+
+        <a href="https://www.google.com/maps/place/Краља+Владимира+1,+Београд/" target="_blank" class="col-4">
+            <i class="fa fa-map-marker-alt"></i> Kralja Vladimira 1 - Beograd</a>
+        <a href="mailto:office@popcinema.rs" class="col-4">
+            <i class="fa fa-envelope"></i> office@popcinema.rs</a>
+        <a href="tel:+38111012345" class="col-4">
+            <i class="fa fa-phone"></i> +381 11/012-345</a>
+
+        <p>
+            <br>
+            <br>
+            <br>
+            &copy; POP - CINEMA 2022 <br> <br>Kreirao: Milanče Andrejić NRT-8/20
+        </p>
+    </div>
+</footer>
+
+<!-- Sekcija za skripte -->
+<script src="js/script.js"></script>
+<script src="js/all.min.js"></script>
+</body>
+</html>
